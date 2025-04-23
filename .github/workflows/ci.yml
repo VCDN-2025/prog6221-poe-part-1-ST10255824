@@ -20,7 +20,10 @@ jobs:
         dotnet-version: '8.0.x'
     - name: Restore dependencies
       run: dotnet restore
+       working-directory: https://github.com/VCDN-2025/prog6221-poe-part-1-ST10255824/tree/master/CyberSecurityBot
     - name: Build
       run: dotnet build --no-restore
+       working-directory: https://github.com/VCDN-2025/prog6221-poe-part-1-ST10255824/tree/master/CyberSecurityBot
     - name: Run Test
       run: dotnet test --no-build --verbosity normal
+       working-directory: https://github.com/VCDN-2025/prog6221-poe-part-1-ST10255824/tree/master/CyberSecurityBot
